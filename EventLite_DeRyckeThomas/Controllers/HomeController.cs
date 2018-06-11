@@ -8,8 +8,10 @@ using EventLite_DeRyckeThomas.Models;
 
 namespace EventLite_DeRyckeThomas.Controllers
 {
+    [Route("Events")]
     public class HomeController : Controller
     {
+        [Route("List")]
         public IActionResult Index()
         {
             return View();
